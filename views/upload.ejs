@@ -14,6 +14,15 @@
 </head>
 <body>
 
+
+<nav class="nav">
+  <a class="nav-link active" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled" href="#">Disabled</a>
+</nav>
+
+
 <h1>Upload data</h1>
 <form action="/upload" method="post">
 
@@ -21,24 +30,38 @@
    <label>Decade</label>
   <input type="text" class="form-control" name="decade" value="" placeholder="Enter email">
   </div>
-  Artist:<br>
-  <input type="text" name="artist" value="">
-  <br>
-    Song:<br>
-  <input type="text" name="song" value="">
-  <br>
-      Category:<br>
-  <input type="text" name="category" value="">
-  <br>
-    WeekAtOne:<br>
-  <input type="text" name="weeksAtOne" value="">
-  <br>
+
+
+<div class="form-group">
+   <label>Artist</label>
+  <input type="text" class="form-control" name="artist" value="" placeholder="Enter Artist">
+  </div>
+
+
+<div class="form-group">
+   <label>Sont</label>
+  <input type="text" class="form-control" name="song" value="" placeholder="Enter Song">
+  </div>
+
+
+<div class="form-group">
+   <label>Category</label>
+  <input type="text" class="form-control" name="Category" value="" placeholder="Enter Category">
+  </div>
+
+
+
+<div class="form-group">
+   <label>WeekAtOne</label>
+  <input type="text" class="form-control" name="weeksAtOne" value="" placeholder="Enter weeksAtOne">
+</div>
+
 
 
 <div class="form-group">
    <label>Age</label>
   <input type="text" class="form-control" name="age" value="" placeholder="Enter age">
-  </div>
+</div>
 
 
 
