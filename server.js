@@ -57,7 +57,7 @@ app.get('/', function(req, res) {
         // Create seed data
         Song.find({}, function(err, users) {
             console.log(users)
-            var myJSON = JSON.stringify(users);
+            var myJSON = JSON.stringify(users, null, 4);
             res.render('index', {
                 data: myJSON
              });
