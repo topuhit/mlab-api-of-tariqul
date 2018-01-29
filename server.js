@@ -25,6 +25,9 @@ var ejs = require('ejs')
 app.set('view engine', 'ejs')
 
 var mongoose = require('mongoose');
+
+// var uri = 'mongodb://username:pass@ds*****8.mlab.com:12321/asdfsadf'
+
 var uri = process.env.DB_HOST;
         // Create song schema
         var songSchema = mongoose.Schema({
