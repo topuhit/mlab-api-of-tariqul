@@ -56,7 +56,7 @@ app.get('/', function(req, res) {
         var Song = mongoose.model('songs', songSchema);
         // Create seed data
         Song.find({}, function(err, users) {
-            console.log(users)
+            // console.log(users)
             var myJSON = JSON.stringify(users, null, 2);
             res.render('index', {
                 data: myJSON
@@ -84,7 +84,7 @@ app.get('/upload/:id', function(req, res) {
       var id = req.params.id;
       var Song = mongoose.model('songs', songSchema);
         Song.findById(id, function(err, user) {
-            console.log(user);
+            // console.log(user);
              res.render('individual_update_form', {
                 data: user
              });
@@ -104,7 +104,7 @@ app.get('/upload/:id', function(req, res) {
 
 app.post('/upload/:id', function(req, res) {
 
-console.log(req.params.id);
+// console.log(req.params.id);
         var Song = mongoose.model('songs', songSchema);
 Song.update({ _id: req.params.id }, req.body, { multi: false }, function(err) {
     if(err) { throw err; }
@@ -118,7 +118,7 @@ Song.update({ _id: req.params.id }, req.body, { multi: false }, function(err) {
 app.post('/upload', function(req, res) {
     // cloudinary.v2.uploader.destroy('speakers/Firefox_Screenshot_2017-02-28T16-56-09113Z-20171101220013_cikpqj', 
     //     {invalidate: true }, function(error, result) {console.log(result)});
-    console.log(req.body); // the posted data
+    // console.log(req.body); // the posted data
     var visitedid = {
         visitedid: req.originalUrl,
     }
@@ -136,7 +136,7 @@ app.post('/upload', function(req, res) {
         Song.insertMany(list);
         var id = "5a6c41997f5a4e22ec753cf9";
         Song.findById(id, function(err, user) {
-            console.log(user);
+            // console.log(user);
         });
         res.render('upload', {});
     });
