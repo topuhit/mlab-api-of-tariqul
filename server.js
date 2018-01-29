@@ -56,7 +56,11 @@ app.get('/', function(req, res) {
         var Song = mongoose.model('songs', songSchema);
         // Create seed data
         Song.find({}, function(err, users) {
-            res.send(JSON.stringify(users, null, '\t'));
+            console.log(users)
+            var myJSON = JSON.stringify(users);
+            res.render('index', {
+                data: myJSON
+             });
         });
     });
 })
