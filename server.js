@@ -12,6 +12,7 @@ var Router = require('router')
 var router = express.Router();
 var helmet = require('helmet')
 var _ = require('lodash');
+require('dotenv').config()
 app.use(express.static('files'))
 // compress all responses
 app.use(compression())
