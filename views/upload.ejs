@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<% include head.ejs %>
+
+<style type="text/css">
+	body {
+		width: 80%;
+		margin: auto;
+	}
+</style>
+</head>
+<body>
+
+<h1>Upload data</h1>
+<form action="/upload" method="post">
+  Decade:<br>
+  <input type="text" name="decade" value="1970s">
+  <br>
+  Artist:<br>
+  <input type="text" name="artist" value="Debby Boone">
+  <br>
+    Song:<br>
+  <input type="text" name="song" value="Physical">
+  <br>
+      Category:<br>
+  <input type="text" name="category" value="Liberal">
+  <br>
+
+
+    WeekAtOne:<br>
+  <input type="text" name="weeksAtOne" value="10">
+  <br>
+    age:<br>
+  <input type="text" name="age" value="23">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>
