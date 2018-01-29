@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  
+  <% include head.ejs %>
+<style type="text/css">
+  body {
+    width: 80%;
+    margin: auto;
+  }
+</style>
+
+</head>
+
+
+<body>
+
+<form action="/upload/<%= data._id %>" method="post">
+  Decade:<br>
+  <input type="text" name="decade" value="<%= data.decade %>">
+  <br>
+  Artist:<br>
+  <input type="text" name="artist" value="<%= data.artist %>">
+  <br>
+    Song:<br>
+  <input type="text" name="song" value="<%= data.song %>">
+  <br>
+
+    Category:<br>
+  <input type="text" name="category" value="<%= data.category %>">
+  <br>
+
+    WeekAtOne:<br>
+  <input type="text" name="weeksAtOne" value="<%= data.weeksAtOne %>">
+  <br>
+    age:<br>
+  <input type="text" name="age" value="<%= data.age %>">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: * 
+Disallow: 
+Sitemap: http://uodaexhibition2015.tariquldesign.com/sitemap.xml
