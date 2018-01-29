@@ -17,29 +17,47 @@
 
 <body>
 
-<form action="/upload/<%= data._id %>" method="post">
-  Decade:<br>
-  <input type="text" name="decade" value="<%= data.decade %>">
-  <br>
-  Artist:<br>
-  <input type="text" name="artist" value="<%= data.artist %>">
-  <br>
-    Song:<br>
-  <input type="text" name="song" value="<%= data.song %>">
-  <br>
 
-    Category:<br>
-  <input type="text" name="category" value="<%= data.category %>">
-  <br>
+  <nav class="nav">
+        <a class="nav-link active" href="/upload">Upload</a>
+        <a class="nav-link" href="/">Home</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+           
+            <div class="col-6">
+               <h1>Upload data</h1>
+                <form action="/upload/<%= data._id %>" method="post">
+                    <div class="form-group">
+                        <label>Decade</label>
+                        <input type="text" class="form-control" name="decade" value="<%= data.decade %>">
+                    </div>
+                    <div class="form-group">
+                        <label>Artist</label>
+                        <input type="text" class="form-control" name="artist" value="<%= data.artist %>">
+                    </div>
+                    <div class="form-group">
+                        <label>Sont</label>
+                        <input type="text" class="form-control" name="song" value="<%= data.song %>">
+                    </div>
+                    <div class="form-group">
+                        <label>Category</label>
+                        <input type="text" class="form-control" name="category" value="<%= data.category %>">
+                    </div>
+                    <div class="form-group">
+                        <label>WeekAtOne</label>
+                        <input type="text" class="form-control" name="weeksAtOne" value="<%= data.weeksAtOne %>">
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="text" class="form-control" name="age" value="<%= data.age %>">
+                    </div>
+                    <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    WeekAtOne:<br>
-  <input type="text" name="weeksAtOne" value="<%= data.weeksAtOne %>">
-  <br>
-    age:<br>
-  <input type="text" name="age" value="<%= data.age %>">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
 
 
 </body>
