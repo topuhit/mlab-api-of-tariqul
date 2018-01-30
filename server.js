@@ -1,7 +1,3 @@
-// server.js
-// where your node app starts
-
-// init project
 var express = require("express")
 var compression = require('compression')
 var multer = require('multer')
